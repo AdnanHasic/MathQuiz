@@ -1,126 +1,162 @@
 
 public class MathematicalOperations {
 
-	public void sabiranjeBrojeva() {
+	public void addition() {
 
 		int x = (int) (Math.random() * 10 + 1);
 		int y = (int) (Math.random() * 10 + 1);
 
-		for (;;) {
+		System.out.println(x + " + " + y + " = ");
 
-			System.out.println(x + " + " + y + " = ");
+		int result = MathQuiz.unos.nextInt();
 
-			int rezultat = MathQuiz.unos.nextInt();
+		if (result == (x + y)) {
 
-			if (rezultat == (x + y)) {
+			System.out.println("Your answer is correct");
 
-				System.out.println("Vas odgovor je tacan");
-				break;
+		} else {
 
-			} else {
-
-				System.out.println("Vas odgovor je pogresan, pokusajte ponovo");
-			}
-
+			System.out.println("Your answer is wrong. The correct answer is " + (x + y));
 		}
 
 	}
 
-	public void oduzimanjeBrojeva() {
+	public void subtraction() {
 
 		int x = (int) (Math.random() * 10 + 1);
 		int y = (int) (Math.random() * 10 + 1);
 
-		for (;;) {
+		System.out.println(x + " - " + y + " = ");
 
-			System.out.println(x + " - " + y + " = ");
+		int result = MathQuiz.unos.nextInt();
 
-			int rezultat = MathQuiz.unos.nextInt();
+		if (result == (x - y)) {
 
-			if (rezultat == (x - y)) {
+			System.out.println("Your answer is correct");
 
-				System.out.println("Vas odgovor je tacan");
-				break;
+		} else {
 
-			} else {
-
-				System.out.println("Vas odgovor je pogresan, pokusajte ponovo");
-			}
+			System.out.println("Your answer is wrong. The correct answer is " + (x - y));
 		}
+
 	}
 
-	public void mnozenjeBrojeva() {
+	public void multiplication() {
 
 		int x = (int) (Math.random() * 10 + 1);
 		int y = (int) (Math.random() * 10 + 1);
 
-		for (;;) {
+		System.out.println(x + " * " + y + " = ");
 
-			System.out.println(x + " * " + y + " = ");
+		int result = MathQuiz.unos.nextInt();
 
-			int rezultat = MathQuiz.unos.nextInt();
+		if (result == (x * y)) {
 
-			if (rezultat == (x * y)) {
+			System.out.println("Your answer is correct");
 
-				System.out.println("Vas odgovor je tacan");
-				break;
+		} else {
 
-			} else {
-
-				System.out.println("Vas odgovor je pogresan, pokusajte ponovo");
-			}
-
+			System.out.println("Your answer is wrong. The correct answer is " + (x * y));
 		}
 
 	}
 
-	public void dijeljenjeBrojeva() {
+	public void division() {
 
 		int x = (int) (Math.random() * 10 + 1);
 		int y = (int) (Math.random() * 10 + 1);
 
-		for (;;) {
+		System.out.println(x + " / " + y + " = ");
 
-			System.out.println(x + " / " + y + " = ");
+		double result = MathQuiz.unos.nextInt();
 
-			int rezultat = MathQuiz.unos.nextInt();
+		if (result == ((double) x / y)) {
 
-			if (rezultat == (x / y)) {
+			System.out.println("Your answer is correct");
 
-				System.out.println("Vas odgovor je tacan");
-				break;
+		} else {
 
-			} else {
-
-				System.out.println("Vas odgovor je pogresan, pokusajte ponovo");
-			}
-
+			System.out.println("Your answer is wrong. The correct answer is " + ((double) x / y));
 		}
 
 	}
 
-	public void randomIzbor() {
+	public void squared() {
 
-		int izbor = (int) (Math.random() * 4 + 1);
+		int x = (int) (Math.random() * 10 + 1);
+		int y = (int) (Math.random() * 10 + 1);
 
-		switch (izbor) {
+		System.out.println(x + " ^ " + y + " = ");
 
-		case 1:
-			sabiranjeBrojeva();
-			break;
+		int result = MathQuiz.unos.nextInt();
 
-		case 2:
-			oduzimanjeBrojeva();
-			break;
+		if (result == (int) Math.pow(x, y)) {
 
-		case 3:
-			mnozenjeBrojeva();
-			break;
+			System.out.println("Your answer is correct");
 
-		case 4:
-			dijeljenjeBrojeva();
-			break;
+		} else {
 
+			System.out.println("Your answer is wrong. The correct answer is " + (int) Math.pow(x, y));
+		}
+
+	}
+
+	public void squareRoot() {
+
+		int x = (int) (Math.random() * 10 + 1);
+
+		System.out.println("Square root : " + x);
+
+		double result = MathQuiz.unos.nextDouble();
+
+		if (result == Math.sqrt(x)) {
+
+			System.out.println("Your answer is correct");
+
+		} else {
+
+			System.out.println("Your answer is wrong. The correct answer is " + Math.sqrt(x));
+		}
+
+	}
+
+	public void randomChoice() {
+
+		int counter = 0;
+
+		while (counter < 5) {
+
+			int choice = (int) (Math.random() * 6 + 1);
+
+			switch (choice) {
+
+			case 1:
+				addition();
+				break;
+
+			case 2:
+				subtraction();
+				break;
+
+			case 3:
+				multiplication();
+				break;
+
+			case 4:
+				division();
+				break;
+
+			case 5:
+				squared();
+				break;
+
+			case 6:
+				squareRoot();
+				break;
+
+			}
+
+			counter++;
 		}
 	}
 

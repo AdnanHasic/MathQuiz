@@ -1,5 +1,31 @@
 
 public class MathematicalOperations {
+	
+	private int counterCorrectAnswer = 0;
+	private int counterWrongAnsswer = 0;
+	
+	
+	
+	public MathematicalOperations() {
+		
+	}
+
+	
+	
+	
+	public int getCounterCorrectAnswer() {
+		return counterCorrectAnswer;
+	}
+
+
+
+
+	public int getCounterWrongAnsswer() {
+		return counterWrongAnsswer;
+	}
+
+
+
 
 	public void addition() {
 
@@ -13,10 +39,14 @@ public class MathematicalOperations {
 		if (result == (x + y)) {
 
 			System.out.println("Your answer is correct");
+			
+			counterCorrectAnswer++;
 
 		} else {
 
 			System.out.println("Your answer is wrong. The correct answer is " + (x + y));
+			
+			counterWrongAnsswer++;
 		}
 
 	}
@@ -33,10 +63,14 @@ public class MathematicalOperations {
 		if (result == (x - y)) {
 
 			System.out.println("Your answer is correct");
+			
+			counterCorrectAnswer++;
 
 		} else {
 
 			System.out.println("Your answer is wrong. The correct answer is " + (x - y));
+			
+			counterWrongAnsswer++;
 		}
 
 	}
@@ -53,10 +87,14 @@ public class MathematicalOperations {
 		if (result == (x * y)) {
 
 			System.out.println("Your answer is correct");
+			
+			counterCorrectAnswer++;
 
 		} else {
 
 			System.out.println("Your answer is wrong. The correct answer is " + (x * y));
+			
+			counterWrongAnsswer++;
 		}
 
 	}
@@ -73,10 +111,14 @@ public class MathematicalOperations {
 		if (result == ((double) x / y)) {
 
 			System.out.println("Your answer is correct");
+			
+			counterCorrectAnswer++;
 
 		} else {
 
 			System.out.println("Your answer is wrong. The correct answer is " + ((double) x / y));
+			
+			counterWrongAnsswer++;
 		}
 
 	}
@@ -93,10 +135,14 @@ public class MathematicalOperations {
 		if (result == (int) Math.pow(x, y)) {
 
 			System.out.println("Your answer is correct");
+			
+			counterCorrectAnswer++;
 
 		} else {
 
 			System.out.println("Your answer is wrong. The correct answer is " + (int) Math.pow(x, y));
+			
+			counterWrongAnsswer++;
 		}
 
 	}
@@ -112,10 +158,14 @@ public class MathematicalOperations {
 		if (result == Math.sqrt(x)) {
 
 			System.out.println("Your answer is correct");
+			
+			counterCorrectAnswer++;
 
 		} else {
 
 			System.out.println("Your answer is wrong. The correct answer is " + Math.sqrt(x));
+			
+			counterWrongAnsswer++;
 		}
 
 	}
@@ -159,5 +209,6 @@ public class MathematicalOperations {
 			counter++;
 		}
 	}
+	
 
 }

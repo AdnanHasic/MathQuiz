@@ -85,7 +85,7 @@ public class MathematicalOperations {
 
 			int rezultat = MathQuiz.unos.nextInt();
 
-			if (rezultat == MathQuiz.unos.nextDouble()) {
+			if (rezultat == (x / y)) {
 
 				System.out.println("Vas odgovor je tacan");
 				break;

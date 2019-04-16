@@ -8,7 +8,7 @@ public class MathQuiz {
 		
 		MathematicalOperations mathOp = new MathematicalOperations();
 		
-		mathOp.sabiranjeBrojeva();
+		mathOp.randomIzbor();
 
 	}
 

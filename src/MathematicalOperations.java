@@ -83,7 +83,7 @@ public class MathematicalOperations {
 
 			System.out.println(x + " / " + y + " = ");
 
-			double rezultat = MathQuiz.unos.nextInt();
+			int rezultat = MathQuiz.unos.nextInt();
 
 			if (rezultat == MathQuiz.unos.nextDouble()) {
 
@@ -97,6 +97,27 @@ public class MathematicalOperations {
 
 		}
 
+	}
+	
+	public void randomIzbor () {
+		
+		int izbor = (int)(Math.random()*4+1);
+		
+		switch(izbor) {
+		
+		case 1: sabiranjeBrojeva();
+		break;
+		
+		case 2: oduzimanjeBrojeva();
+		break;
+		
+		case 3: mnozenjeBrojeva();
+		break;
+		
+		case 4: dijeljenjeBrojeva();
+		break;
+		
+		}
 	}
 
 }

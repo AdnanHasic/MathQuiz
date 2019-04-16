@@ -73,5 +73,30 @@ public class MathematicalOperations {
 		}
 
 	}
+	
+	public void dijeljenjeBrojeva() {
+
+		int x = (int) (Math.random() * 10 + 1);
+		int y = (int) (Math.random() * 10 + 1);
+
+		for (;;) {
+
+			System.out.println(x + " / " + y + " = ");
+
+			double rezultat = MathQuiz.unos.nextInt();
+
+			if (rezultat == MathQuiz.unos.nextDouble()) {
+
+				System.out.println("Vas odgovor je tacan");
+				break;
+
+			} else {
+
+				System.out.println("Vas odgovor je pogresan, pokusajte ponovo");
+			}
+
+		}
+
+	}
 
 }

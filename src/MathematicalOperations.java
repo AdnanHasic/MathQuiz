@@ -73,7 +73,7 @@ public class MathematicalOperations {
 		}
 
 	}
-	
+
 	public void dijeljenjeBrojeva() {
 
 		int x = (int) (Math.random() * 10 + 1);
@@ -98,25 +98,29 @@ public class MathematicalOperations {
 		}
 
 	}
-	
-	public void randomIzbor () {
-		
-		int izbor = (int)(Math.random()*4+1);
-		
-		switch(izbor) {
-		
-		case 1: sabiranjeBrojeva();
-		break;
-		
-		case 2: oduzimanjeBrojeva();
-		break;
-		
-		case 3: mnozenjeBrojeva();
-		break;
-		
-		case 4: dijeljenjeBrojeva();
-		break;
-		
+
+	public void randomIzbor() {
+
+		int izbor = (int) (Math.random() * 4 + 1);
+
+		switch (izbor) {
+
+		case 1:
+			sabiranjeBrojeva();
+			break;
+
+		case 2:
+			oduzimanjeBrojeva();
+			break;
+
+		case 3:
+			mnozenjeBrojeva();
+			break;
+
+		case 4:
+			dijeljenjeBrojeva();
+			break;
+
 		}
 	}
 
